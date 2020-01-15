@@ -79,3 +79,25 @@ except ImportError:
     pass
 else:
     extensions.append('sphinxcontrib.programoutput')
+
+try:
+    import sphinx_autodoc_typehints
+except ImportError:
+    pass
+else:
+    # See: https://github.com/agronholm/sphinx-autodoc-typehints#installation-and-setup
+    extensions.append('sphinx_autodoc_typehints')
+
+try:
+    import yarl
+except ImportError:
+    pass
+else:
+    intersphinx_mapping['yarl'] = ('https://yarl.rtfd.io/en/stable/', None)
+
+try:
+    import aiohttp
+except ImportError:
+    pass
+else:
+    intersphinx_mapping['aiohttp'] = ('https://docs.aiohttp.org/en/stable/', None)
