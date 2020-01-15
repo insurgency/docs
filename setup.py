@@ -10,4 +10,8 @@ setup(
         'Topic :: Documentation',
         'Topic :: Documentation :: Sphinx',
     ],
+    install_requires=[
+        'Sphinx',
+        'sphinx-autodoc-typehints',
+    ],
 )

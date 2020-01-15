@@ -5,9 +5,9 @@ verify_ssl = true
 
 [dev-packages]
 documentation = {editable = true,path = "."}
-sphinx = "*"
 
 [packages]
+sphinx-autodoc-typehints = "*"
 sphinx = "*"
 
 [requires]
