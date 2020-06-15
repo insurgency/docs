@@ -7,7 +7,7 @@ verify_ssl = true
 documentation = {editable = true,path = "."}
 
 [packages]
-sphinx-autodoc-typehints = "*"
+sphinx-autodoc-typehints = {git = "https://github.com/agronholm/sphinx-autodoc-typehints.git",ref = "2dae2d685a5edf82c1ee3d919ff9434c2a1622f8"}
 sphinx = "*"
 
 [requires]

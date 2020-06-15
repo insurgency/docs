@@ -12,6 +12,7 @@ setup(
     ],
     install_requires=[
         'Sphinx',
-        'sphinx-autodoc-typehints',
+        'git+https://github.com/agronholm/sphinx-autodoc-typehints.git@2dae2d685a5edf82c1ee3d919ff9434c2a1622f8#egg'
+        '=sphinx-autodoc-typehints',
     ],
 )
