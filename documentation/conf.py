@@ -61,8 +61,9 @@ except ImportError:
 else:
     extensions.append('djangodocs')
 
-    _ = ('https://docs.djangoproject.com/en/stable/', 'https://docs.djangoproject.com/en/stable/_objects/')
-    intersphinx_mapping.update(dict.fromkeys(['dj', 'django'], _))
+    value = ('https://docs.djangoproject.com/en/stable/', 'https://docs.djangoproject.com/en/stable/_objects/')
+    # noinspection PyTypeChecker
+    intersphinx_mapping.update(dict.fromkeys(['dj', 'django'], value))
 
 try:
     # noinspection PyPackageRequirements
@@ -70,8 +71,8 @@ try:
 except ImportError:
     pass
 else:
-    _ = ('https://redis-py.readthedocs.io/en/stable/', None)
-    intersphinx_mapping.update(dict.fromkeys(['redis', 'redis-py'], _))
+    value = ('https://redis-py.readthedocs.io/en/stable/', None)
+    intersphinx_mapping.update(dict.fromkeys(['redis', 'redis-py'], value))
 
 try:
     import sphinxcontrib.programoutput
@@ -89,6 +90,7 @@ else:
     extensions.append('sphinx_autodoc_typehints')
 
 try:
+    # noinspection PyPackageRequirements
     import yarl
 except ImportError:
     pass
@@ -96,6 +98,7 @@ else:
     intersphinx_mapping['yarl'] = ('https://yarl.rtfd.io/en/stable/', None)
 
 try:
+    # noinspection PyPackageRequirements
     import aiohttp
 except ImportError:
     pass
