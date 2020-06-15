@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "e054af825cdd9a015e99bcf4574d235117b21631ed70383b4afa21776e99830d"
+            "sha256": "96f92c8da41b6c84a2703f3bc333fb490839795d0fb62ec6d5630addc6d66f4f"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -169,7 +169,7 @@
         },
         "sphinx-autodoc-typehints": {
             "git": "https://github.com/agronholm/sphinx-autodoc-typehints.git",
-            "ref": "2dae2d685a5edf82c1ee3d919ff9434c2a1622f8"
+            "ref": "47f6e7b8382e709c21e062c82425a1a78b9db1d1"
         },
         "sphinxcontrib-applehelp": {
             "hashes": [
@@ -379,7 +379,7 @@
         },
         "sphinx-autodoc-typehints": {
             "git": "https://github.com/agronholm/sphinx-autodoc-typehints.git",
-            "ref": "2dae2d685a5edf82c1ee3d919ff9434c2a1622f8"
+            "ref": "47f6e7b8382e709c21e062c82425a1a78b9db1d1"
         },
         "sphinxcontrib-applehelp": {
             "hashes": [
