@@ -4,11 +4,12 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 
 [dev-packages]
-documentation = {editable = true,path = "."}
+documentation = {editable = true, path = "."}
 
 [packages]
-sphinx-autodoc-typehints = {git = "https://github.com/agronholm/sphinx-autodoc-typehints.git",ref = "master"}
 sphinx = "*"
+sphinx-autobuild = "*"
+sphinx-autodoc-typehints = {ref = "master", git = "https://github.com/tillhainbach/sphinx-autodoc-typehints.git"}
 
 [requires]
-python_version = "3.8"
+python_version = "3.9"

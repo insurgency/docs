@@ -1,7 +1,17 @@
-## Install
+## Development
 
+### Install
+
+```shell script
+$ pipenv install --dev -e ./
 ```
-$ pipenv install --dev -e git+https://github.com/insurgency/docs.git#egg=documentation
+
+## Usage
+
+### Installation
+
+```shell script
+$ pipenv install --dev git+https://github.com/insurgency/docs.git#egg=documentation
 ```
 
 ### `Pipfile`
@@ -14,24 +24,28 @@ verify_ssl = true
 
 [dev-packages]
 # ...
-documentation = {editable = true,git = "https://github.com/insurgency/docs.git"}
+documentation = {git = "https://github.com/insurgency/docs.git"}
 # ...
 
 [packages]
 # ...
-
-[requires]
-python_version = "..."
 ```
 
 ### `docs/conf.py`
 
 ```python
 # noinspection PyUnresolvedReferences,PyPackageRequirements
-from conf import *
+from documentation import *
 
 # Override general settings...
 
 project = ...
+
 ...
+```
+
+### Building
+
+```shell script
+$ sphinx-autobuild ./docs/ ./docs/_build/html/
 ```
