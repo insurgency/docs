@@ -7,7 +7,7 @@ from datetime import datetime
 author = 'insurgency.gg'
 autodoc_member_order = 'bysource'
 # noinspection PyShadowingBuiltins
-copyright = f'{datetime.now().year}, insurgency.gg'
+copyright = f'{datetime.now().year}, {author}'
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 extensions = [
     'sphinx.ext.autodoc',
